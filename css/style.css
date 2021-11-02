@@ -122,8 +122,16 @@ nav ul li a:hover {
 .content .img {
     height: 170px;
     background-size: cover;
-    filter: brightness(90%);
     border-radius: 10px;
+    position: relative;
+}
+
+.content .img .background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    background-color: rgba(30, 30, 30, 20%);
 }
 
 .box-1 .content .img {
@@ -137,7 +145,6 @@ nav ul li a:hover {
 .box-3 .content .img {
     background: url(../img/img-3.jpg) no-repeat 50% 50%;
 }
-
 
 .content-text{
     color: #bbb;
