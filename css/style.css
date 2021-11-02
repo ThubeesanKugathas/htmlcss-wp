@@ -1,0 +1,156 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page {
+    width: 1000px;
+    margin: 0 auto;
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+
+/* header + intro  */
+header {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+header img {
+    width: 170px;
+    padding-right: 15px;
+    border-right: 1px solid #ccc;
+}
+
+/* nav bar  */
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #bbb;
+    padding: 2px 5px;
+}
+
+nav ul li a:hover {
+    color: white;
+    background: black;
+}
+
+/* intro con background e titoletto  */
+.intro {
+    width: 100%;
+    height: 500px;
+    margin-top: 30px;
+    background: url(../img/banner.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    /* filter: brightness(90%); */
+    border-radius: 20px;
+    position: relative;
+}
+
+.text {
+    color: white;
+    width: 500px;
+    position: absolute;
+    bottom: 80px;
+    left: 40px;
+}
+
+/* container contenente l'head e la row  */
+.container {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.head {
+    color: #bbb;
+}
+
+.head h2 {
+    color: black;
+    font-size: 30px;
+}
+
+.row {
+    width: 100%;
+    height: calc(100% - 70px);
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.box-1 {
+    width: 20%;
+    float: left;
+    padding-right: 15px;
+}
+
+.box-2 {
+    width: 60%;
+    float: left;
+    padding-right: 15px;
+}
+
+.box-3 {
+    width: 20%;
+    float: left;
+}
+
+.content {
+    height: 100%;
+    font-size: 15px;
+}
+
+.content .img {
+    height: 170px;
+    background-size: cover;
+    filter: brightness(95%);
+    border-radius: 10px;
+}
+
+.box-1 .content .img {
+    background: url(../img/img-1.jpg) no-repeat 50% 40%;
+}
+
+.box-2 .content .img {
+    background: url(../img/banner-2.jpg) no-repeat 50% 40%;
+}
+
+.box-3 .content .img {
+    background: url(../img/img-3.jpg) no-repeat 50% 50%;
+}
+
+
+.content-text{
+    color: #bbb;
+    padding: 10px 0;
+}
+
+.content-text h3 {
+    color: black;
+    padding-bottom: 10px;
+}
+
+/* footer  */
+footer {
+    text-align: center;
+    width: 100%;
+}
+
+footer span {
+    color: red;
+    font-size: 20px;
+}
